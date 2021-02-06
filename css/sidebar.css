@@ -1,0 +1,117 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 30% repeat(3, minmax(5rem, 1fr)) 30%;
+    grid-template-rows: 50% 50% 50%;
+}
+
+#morado{
+    background: #B501FB;
+    grid-row: 1/3;
+    grid-column-start: 3;
+}
+
+#container{
+    background: #E6E6E6;
+    margin: 10px;
+    padding: 10px;
+}
+
+#container h3{
+    text-align: center;
+    opacity: .2;
+}
+
+#container p{
+    text-align: center;
+}
+
+#categorias{
+    float: left;
+}
+
+#categorias li{
+    list-style: none;
+    margin: 10px 0 10px 0;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#categorias li::before{
+    content: "<< ";
+}
+
+#categorias li::after{
+    content: " >>";
+}
+
+#categorias li:hover{
+    background-color: #E3A7FC;
+    color: #8F49AC;
+}
+
+#imagen{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#container img{
+    margin-top: 50%;
+    height: 100px;
+    width: 110px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+/*NAVBAR STYLES*/
+
+nav{
+    background: #CEF6CE;
+    padding: 10px 0 10px 0;
+    margin-bottom: 5%;
+    overflow: hidden;
+    top: 0;
+    position: sticky;
+    
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav-links li{
+    
+    cursor: pointer;
+}
+
+.vender_btn{
+}
+
+/*PROPUESTA STYLES*/
+
+.propuesta{
+    align-items: center;
+}
+
+.propuesta li{
+    list-style: none;
+    padding: 5% 0 0 0;
+    text-align: left;
+}
+
+h3{
+    margin-top: 10%;
+    grid-row: 1/6;
+    grid-column-start: 5;
+}
